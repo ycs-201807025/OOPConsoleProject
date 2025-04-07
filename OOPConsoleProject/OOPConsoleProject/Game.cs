@@ -12,23 +12,26 @@ namespace OOPConsoleProject
         private static Dictionary<string, BaseScene> sceneDic;
         private static BaseScene curScene;
 
+        private static Player player;
+        public static Player Player { get { return player; } }
+
         private static bool gameOver;
 
-        
         public static void Run()
         {
             Start();
+
             while (gameOver == false)
             {
                 Console.Clear();
                 curScene.Render();
-                Console.WriteLine();
                 curScene.Input();
                 Console.WriteLine();
                 curScene.Update();
                 Console.WriteLine();
                 curScene.Result();
             }
+
             End();
         }
 
@@ -36,22 +39,29 @@ namespace OOPConsoleProject
         {
             curScene = sceneDic[sceneName];
         }
+
         /// <summary>
         /// 게임의 시작 작업 진행
         /// </summary>
         private static void Start()
         {
-            //게임 설정
+            Console.CursorVisible = false;
+
+            // 게임 설정
             gameOver = false;
-            //씬 설정
+
+            // 플레이어 설정
+            player = new Player();
+
+            // 씬 설정
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new Titlescene());
             sceneDic.Add("Town", new TownScene());
             sceneDic.Add("Field", new FieldScene());
-            
 
             curScene = sceneDic["Title"];
         }
+
         /// <summary>
         /// 게임의 마무리 작업 진행
         /// </summary>

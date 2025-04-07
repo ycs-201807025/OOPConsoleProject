@@ -46,6 +46,10 @@
     <Compile Include="BaseScene.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="IInteractable.cs" />
+    <Compile Include="GameObject\Place.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scene\FieldScene.cs" />
@@ -54,6 +58,7 @@
     <Compile Include="Scene\TestScene03.cs" />
     <Compile Include="Scene\Titlescene.cs" />
     <Compile Include="Scene\TownScene.cs" />
+    <Compile Include="Struct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

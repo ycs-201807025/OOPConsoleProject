@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOPConsoleProject.Scene;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,9 +46,9 @@ namespace OOPConsoleProject
             //씬 설정
             sceneDic = new Dictionary<string, BaseScene>();
             sceneDic.Add("Title", new Titlescene());
-            sceneDic.Add("Test01", new Titlescene());
-            sceneDic.Add("Test02", new Titlescene());
-            sceneDic.Add("Test03", new Titlescene());
+            sceneDic.Add("Town", new TownScene());
+            sceneDic.Add("Field", new FieldScene());
+            
 
             curScene = sceneDic["Title"];
         }

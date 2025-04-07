@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOPConsoleProject
 {
+   
     class Titlescene : BaseScene
     {
+
         public override void Render()
         {
             Console.WriteLine("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆");
@@ -27,7 +29,7 @@ namespace OOPConsoleProject
         }
         public override void Result()
         {
-            Game.ChangeScene("Test01");
+            Game.ChangeScene("Town");
         }
 
         

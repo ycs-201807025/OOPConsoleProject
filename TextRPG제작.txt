@@ -1,0 +1,6 @@
+게임
+-씬
+--Render()
+--Input()
+--Update()
+--Result()

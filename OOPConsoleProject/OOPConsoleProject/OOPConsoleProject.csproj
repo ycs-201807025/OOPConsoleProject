@@ -53,6 +53,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scene\FieldScene.cs" />
+    <Compile Include="Scene\ForestFieldScene.cs" />
+    <Compile Include="Scene\NormalFieldScene.cs" />
     <Compile Include="Scene\TestScene01.cs" />
     <Compile Include="Scene\TestScene02.cs" />
     <Compile Include="Scene\TestScene03.cs" />
